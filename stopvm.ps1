@@ -45,3 +45,4 @@ catch {
 Write-output "Stopping the following servers:"
 Write-output $vms.Name
 stop-vms $vms
+# end of script
