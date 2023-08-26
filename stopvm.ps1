@@ -23,6 +23,7 @@ function Stop-Vms {
             # Stop the VM
             $vm | stop-AzVM -ErrorAction Stop -Force -NoWait
         }
+        
         catch {
             $ErrorMessage = $_.Exception.message
             Write-Error ("Error starting the VM: " + $ErrorMessage)
